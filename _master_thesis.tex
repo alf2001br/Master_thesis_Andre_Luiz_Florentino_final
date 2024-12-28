@@ -1,0 +1,84 @@
+\documentclass[acronym,symbols]{fei}
+
+%\pagestyle{headings}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% -- Configuracoes Iniciais
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{André Luiz Florentino}
+%\cidade{Cidade}
+%\instituicao{Instituição de Ensino}
+\title{ENVIRONMENTAL SOUND RECOGNITION IN EMBEDDED SYSTEMS}
+\subtitulo{\\BRIDGING EXPERIMENTS IN PASSENGER VEHICLES TO \\AUTONOMOUS VEHICLE APPLICATIONS IN SMART CITIES}
+% comando para inserção de subfloats do tipo figure, usado aqui no template
+% remova este comando se for usar o pacote subfig
+% não recomendo o pacote subcaption
+
+%\newsubfloat{figure}
+
+%\subtitulo{subtítulo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% -- Entradas Listas de Abreviaturas e Simbolos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{000-configs}
+
+% Exported from Zotero to match ABNT latest requirements
+\addbibresource{resources/bibliography/00_Hypotheses.bib}
+\addbibresource{resources/bibliography/01_Datasets.bib}
+\addbibresource{resources/bibliography/02_Books.bib}
+\addbibresource{resources/bibliography/03_Systematic_review.bib}
+\addbibresource{resources/bibliography/04_Other_references.bib}
+
+% Syncronized references with Zotero
+%\addbibresource{resources/bibliography/zotero.bib}
+
+\makeglossaries
+
+\begin{document}
+
+\maketitle
+
+\selectlanguage{english}
+
+\input{010-pre-resume.tex}
+\input{011-abstract}
+
+\listoffigures
+\listoftables
+\printglossaries
+\tableofcontents
+
+\setcounter{table}{0}
+
+\input{020-introduction}
+\input{030-theoretical_framework}
+\input{040-related_work}
+\input{050-methods}
+\input{060-results.tex}
+\input{070-conclusion}
+
+\hypersetup{urlcolor=black}
+\printbibliography
+
+\hypersetup{urlcolor=blue}
+\appendix
+\input{080-systematic-review}
+\input{090-source_code}
+
+\end{document}
