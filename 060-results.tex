@@ -30,7 +30,7 @@ This section presents the basic benchmark metrics gathered within the body of li
 To ensure the soundness of the \gls{esr} algorithm, accuracy rates of benchmark datasets were initially compiled from the literature, but only the ones that fully comply with the dataset specifications, more specifically, with k-fold cross-validation setting of 5 for ESC-10, 3 for BDLib2 and 10 for \gls{us8k}. Thus, the values in Table \ref{table:results_benchmark_accuracy} were collected from \textcite{PiczakESC2015}, \textcite{Bountourakis2019}\footnote{The \gls{sti} method better matches the features utilized in this study, with 75.2\% \gls{ann}, 75.0\% \gls{glm}, and 73.6\% \gls{lr}, nevertheless, the highest results were considered in the table.} with the \gls{eti} method,  \textcite{Salamon2014}, and \textcite{Vandendriessche2021}.
 
 \begin{table}[ht!]
-    \caption[Accuracy results benchmark of the datasets]{Compilation of the accuracy results to establish a benchmark on the utilized datasets.}
+    \caption[Benchmark of accuracy rates of the datasets]{Compilation of the accuracy rates to establish a benchmark on the utilized datasets.}
     \label{table:results_benchmark_accuracy}
     \centering
     \begin{tabular}{
@@ -93,10 +93,10 @@ threshold between the colors for the three highest values. This result aligns we
     \smallcaption{Source: Author}
 \end{table}
 
-At this point, the benchmark Table \ref{table:results_benchmark_accuracy} was updated with the best accuracy results from Table \ref{table:results_accuracy_overview_classifiers_aug_ori_2}. The comparison is presented in Table \ref{table:results_accuracy_comparison}, and it entails that the feature selection was sound overcoming all results of comparable classifiers except by the \gls{ann} in the BDLib2 dataset.
+At this point, the benchmark Table \ref{table:results_benchmark_accuracy} was updated with the best accuracy rates from Table \ref{table:results_accuracy_overview_classifiers_aug_ori_2}. The comparison is presented in Table \ref{table:results_accuracy_comparison}, and it entails that the feature selection was sound overcoming all rates of comparable classifiers except by the \gls{ann} in the BDLib2 dataset.
 
 \begin{table}[ht!]
-    \caption[Comparison of the accuracy results benchmark with the best models from cross-validation]{Compilation of the benchmark (BM) results against the augmented normalized models for ESC-10 and BDLib2 and original normalized models for \gls{us8k}.}
+    \caption[Comparison of the accuracy rates benchmark with the best models from cross-validation]{Compilation of the benchmark (BM) of accuracy rates against the augmented normalized models for ESC-10 and BDLib2 and original normalized models for \gls{us8k}.}
     \label{table:results_accuracy_comparison}
     \centering
     \begin{tabular}{
@@ -159,7 +159,7 @@ Given the $p$-value = 0.005, the null hypothesis was rejected in all datasets, a
 %This result is not conclusive; rather, it provides evidence that needs to be consistently observed and replicated in further studies to identify a reliable trend.
 
 \begin{table}[ht!]
-    \caption[Statistic evaluation of the accuracy results between the augmented and windowed models among datasets]{Statistic evaluation of the accuracy results between the augmented and windowed models among datasets.}
+    \caption[Statistic evaluation of the accuracy rates between the augmented and windowed models among datasets]{Statistic evaluation of the accuracy rates between the augmented and windowed models among datasets.}
     \label{table:results_paired_t-test_datasets}
     \centering
     \begin{tabular}{
@@ -237,7 +237,7 @@ At this moment, the following outcomes were identified and will henceforth be ad
 
 
 \begin{table}[ht!]
-    \caption[Benchmark accuracy results for the dataset US8K\_AV.]{Compilation of the feature extraction processes and top-performing classifiers on the US8K\_AV dataset.}
+    \caption[Benchmark of accuracy rates for the dataset US8K\_AV.]{Compilation of the feature extraction processes and top-performing classifiers on the US8K\_AV dataset.}
     \label{table:results_feature_extraction_and_classifiers_us8k_av}
     \centering
     \begin{tabular}{
