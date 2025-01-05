@@ -103,7 +103,7 @@ All recordings in the dataset are uncompressed single channel files in WAV forma
 
 While the original dataset experimental results \cite{Bountourakis2015} showed promising performance in classifying 7 different sound classes, it performed poorly in the recognition problem for 12 classes. Therefore, \textcite{Bountourakis2019} changed the library structure into new classes deliberately chosen to encompass a comprehensive range of sounds encountered in both indoor and outdoor soundscapes, aligning with established recognition schemes. To maintain diversity and authenticity, each class was uniformly represented in the database with 18 audio files, showcasing significant variations that reflect real-life scenarios.
 
-Considering the total duration of the collected files amounts to 1,800 \gls{s}, which may be regarded relatively small for the intended classification task, two common data augmentation techniques were applied to address the problem of limited data, namely, time stretching with factors of 0.85 and 1.15, and pitch shifting by -4 and +4 semitones, carefully defined to ensure the semantic integrity of the transformed data. 
+Considering the total duration of the collected files amounts to 1,800 \gls{s}, which may be regarded as relatively small for the intended classification task, two common data augmentation techniques were applied to address the problem of limited data, namely, time stretching with factors of 0.85 and 1.15, and pitch shifting by -4 and +4 semitones, carefully defined to ensure the semantic integrity of the transformed data. 
 
 Following augmentation, the total duration of the complete database increased to 8,820 \gls{s}, which is comparable to the duration of similar reliable databases. It is worth noting that these augmentation techniques have been associated with improved model accuracy for environmental sound classification tasks \cite{Salamon2017} and are also presented in the systematic review of \textcite{Alli2022} for data augmentation and deep learning methods in sound classification.
 
@@ -587,7 +587,7 @@ During this phase of the study, several architectures for the \gls{cnn} 2D model
     \item The second convolutional layer mirrors the first one but is followed by a max-pooling layer with a pool stride of 2x2 to reduce the dimensions of the convolutional feature maps and includes a dropout rate of 50\% to mitigate overfitting;
     \item The third convolutional layer consists of 64 filters with a kernel size of 3x3 and a stride of 1x1, employing the \gls{relu} activation function, followed by batch normalization;
     \item The fourth convolutional layer is identical to the third one but is succeeded by a max-pooling layer with a pool stride of 2x2 and a dropout rate of 50\%;
-    \item A flatten layer reshapes the output from the previous layer into a one-dimensional vector in preparation for subsequent processing;
+    \item A flattened layer reshapes the output from the previous layer into a one-dimensional vector in preparation for subsequent processing;
     \item A fully-connected dense layer with 1,024 neurons is added before the final output, followed by another dropout layer set at 50\%;
     \item The final classification task is performed in the last layer, which contains neurons equal to the number of output classes (6 or 10) and uses the softmax activation function to output probabilities for each class;
 \end{itemize}
